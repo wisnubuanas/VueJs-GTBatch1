@@ -1,48 +1,57 @@
 <template>
   <div id="app">
-    <Navbar></Navbar>
+    <router-view></router-view>
+    <!-- <Navbar></Navbar>
     <Breadcrumb></Breadcrumb>
-    <Gallery></Gallery>
+    <Gallery :ImgTampungFoto="ImgTampung"></Gallery>
     <Card></Card>
-    <Slider></Slider>
+    <Slider @changePictureSlider="changePictureFunc"></Slider>
     <Footer></Footer>
-    <Copyright></Copyright>
-
-
+    <Copyright></Copyright> -->
   </div>
 </template>
 
 <script>
 
-import Navbar from '@/components/Navbar.vue'
-import Breadcrumb from '@/components/Breadcrumb.vue'
-import Gallery from '@/components/Gallery.vue'
-import Card from '@/components/Card.vue'
-import Slider from '@/components/Slider.vue'
-import Footer from '@/components/Footer.vue'
-import Copyright from '@/components/Copyright.vue'
+// import Navbar from '@/components/Navbar.vue'
+// import Breadcrumb from '@/components/Breadcrumb.vue'
+// import Gallery from '@/components/Gallery.vue'
+// import Card from '@/components/Card.vue'
+// import Slider from '@/components/Slider.vue'
+// import Footer from '@/components/Footer.vue'
+// import Copyright from '@/components/Copyright.vue'
 
 export default {
   name: 'App',
-  components: {
-    Navbar, 
-    Breadcrumb, 
-    Gallery,  
-    Card,
-    Slider,
-    Footer,
-    Copyright
-  }
+  // components: {
+  //   Navbar, 
+  //   Breadcrumb, 
+  //   Gallery,  
+  //   Card,
+  //   Slider,
+  //   Footer,
+  //   Copyright
+  // },
+  // data() {
+  //   return {
+  //     ImgTampung: "chair",
+  //   };
+  // },
+  // methods: {
+  //   changePictureFunc: function (cardImage) {
+  //     this.ImgTampung = cardImage;
+  //   }
+  // }
 }
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
+  text-align: center;
   color: #2c3e50;
-  /* margin-top: 60px; */
-}
+  margin-top: 60px;
+} */
 </style>

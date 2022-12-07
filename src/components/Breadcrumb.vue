@@ -1,8 +1,12 @@
 <template>
   <div class="d-flex p-2 mx-3">
-            <a>Home /  &nbsp;</a>
-            <a>Office Room /  &nbsp;</a>
-            <a> <b>Details</b> </a>
+            <router-link to="./Detail" class="text-dark">Home </router-link>
+            <a>&nbsp; /  &nbsp;</a>
+            <router-link to="./Detail" class="text-dark" > Details</router-link>
+            <a>&nbsp; /  &nbsp;</a>
+            <router-link to="./Shipping" class="text-dark" > Shipping </router-link>
+            <a>&nbsp; /  &nbsp;</a>
+            <router-link to="./shippingList" class="text-dark">Shipping List</router-link>
         </div>
 </template>
 

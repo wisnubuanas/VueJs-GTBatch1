@@ -21,7 +21,7 @@
      
         
         <div>
-            <img alt="kursi" id="kursi0" src="../assets/chair.png">
+            <img alt="kursi" id="kursi0" :src="require('../assets/' + ImgTampungFoto + '.png')" width="500px">
         </div>
         
         <div>
@@ -46,9 +46,7 @@
 <script>
 export default {
     name: 'GalleryComponents',
-    props: {
-    msg: String
-  }
+    props: ["ImgTampungFoto"]
 }
 </script>
 
